@@ -11,7 +11,10 @@ Run `pip install requirement.txt` to install all requrements!
 
 
 ## Acknowlegements
-This repository is built upon the following two repositories: https://github.com/rwightman/pytorch-image-models and https://github.com/RulinShao/on-the-adversarial-robustness-of-visual-transformer. 
+This repository is built upon the following two repositories:<br/>
+https://github.com/rwightman/pytorch-image-models
+<br/>
+https://github.com/RulinShao/on-the-adversarial-robustness-of-visual-transformer. 
 ## Cite this
 If you find our code is useful, we sincerely hope you could cite our accompanying paper!
 ```
