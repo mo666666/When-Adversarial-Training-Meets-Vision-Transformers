@@ -3,7 +3,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='deit_small_patch16_224')
     parser.add_argument('--method', type=str, default='pgd',
-                        choices=['st', 'pgd', 'trades', 'MART'])
+                        choices=['AT'])
     parser.add_argument('--dataset', type=str,default="imagenet")
     parser.add_argument('--run-dummy', action='store_true')
     parser.add_argument('--accum-steps', type=int, default=1)

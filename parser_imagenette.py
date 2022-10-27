@@ -3,7 +3,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='vit_base_patch16_224')
     parser.add_argument('--method', type=str, default='pgd',
-                        choices=['st', 'pgd', 'trades',  'MART'])
+                        choices=['AT', 'TRADES',  'MART'])
     parser.add_argument('--dataset', type=str,default="imagenette")
     parser.add_argument('--run-dummy', action='store_true')
     parser.add_argument('--accum-steps', type=int, default=1)

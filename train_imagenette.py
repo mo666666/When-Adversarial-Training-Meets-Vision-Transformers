@@ -220,7 +220,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                             handle_list.append(
                                 module.drop_path.register_backward_hook(drop_hook_func))
             model.train()
-            if args.method == 'pgd':
+            if args.method == 'AT':
                 X = X.cuda()
                 y = y.cuda()
                 if mixup_fn is not None:
@@ -265,7 +265,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                 X_adv = X + delta
                 output = model(X_adv)
                 loss = criterion(output, y)
-            elif args.method == 'trades':
+            elif args.method == 'TRADES':
                 X = X.cuda()
                 y = y.cuda()
                 epsilon = epsilon_base.cuda()
@@ -365,7 +365,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                 raise ValueError(args.method)
             opt.zero_grad()
             (loss / args.accum_steps).backward()
-            if args.method == 'pgd':
+            if args.method == 'AT':
                 acc = (output.max(1)[1] == y.max(1)[1]).float().mean()
             else:
                 acc = (output.max(1)[1] == y).float().mean()

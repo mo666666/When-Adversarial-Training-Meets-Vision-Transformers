@@ -160,7 +160,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                         if isinstance(module, SwinTransformerBlock):
                             handle_list.append(module.drop_path.register_backward_hook(drop_hook_func))
             model.train()
-            if args.method == 'pgd':
+            if args.method == 'AT':
                 X = X.cuda()
                 y = y.cuda()
                 if mixup_fn is not None:
@@ -269,7 +269,6 @@ args.eval_iters = 100
 pgd_loss, pgd_acc = evaluate_pgd(args, model,test_loader)
 logger.info('PGD100 : loss {:.4f} acc {:.4f}'.format(pgd_loss, pgd_acc))
 
-args.eval_iters = 10
-args.eval_restarts = 1
+
 at_path = os.path.join(args.out_dir, 'result_'+'_autoattack.txt')
 evaluate_aa(args, model,at_path, args.AA_batch)
