@@ -69,10 +69,9 @@ https://github.com/RulinShao/on-the-adversarial-robustness-of-visual-transformer
 ## Cite this
 If you find our code is useful, we sincerely hope you could cite our accompanying paper!
 ```
-@article{mo2022adversarial,
+@inproceedings{moadversarial,
   title={When Adversarial Training Meets Vision Transformers: Recipes from Training to Architecture},
   author={Mo, Yichuan and Wu, Dongxian and Wang, Yifei and Guo, Yiwen and Wang, Yisen},
-  journal={arXiv preprint arXiv:2210.07540},
-  year={2022}
+  booktitle={Advances in Neural Information Processing Systems}
 }
 ```
