@@ -1,5 +1,7 @@
 # When-Adversarial-Training-Meets-Vision-Transformers
-Official implementation of "When Adversarial Training Meets Vision Transformers: Recipes from Training to Architecture" published at NeurIPS 2022. 
+
+Adv Training of ViTs @ NeurIPS 2022 "[When Adversarial Training Meets Vision Transformers: Recipes from Training to Architecture](https://arxiv.org/pdf/2210.07540.pdf)" by Yichuan Mo, Dongxian Wu, Yifei Wang, Yiwen Guo, [Yisen Wang](https://yisenwang.github.io/).  
+
 ## Requirements
 Run `pip install requirement.txt` to install all requrements!
 ## CIFAR-10
@@ -66,12 +68,13 @@ https://github.com/RulinShao/on-the-adversarial-robustness-of-visual-transformer
 
 
 
-## Cite this
-If you find our code is useful, we sincerely hope you could cite our accompanying paper!
+## Cite this work
+If you find our code is useful, please cite our accompanying paper!
 ```
 @inproceedings{moadversarial,
   title={When Adversarial Training Meets Vision Transformers: Recipes from Training to Architecture},
   author={Mo, Yichuan and Wu, Dongxian and Wang, Yifei and Guo, Yiwen and Wang, Yisen},
-  booktitle={Advances in Neural Information Processing Systems}
+  booktitle={NeurIPS}
+  year={2022}
 }
 ```
