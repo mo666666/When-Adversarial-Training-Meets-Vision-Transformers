@@ -188,7 +188,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                             for r, c in zip(rows, cols):
                                 add_noise_mask[:, :, r * args.patch:(r + 1) * args.patch,
                                 c * args.patch:(c + 1) * args.patch] = 0
-                        if not args.PRM:
+                        if args.PRM:
                             delta = delta * add_noise_mask
                         output = model(X + delta)
                         loss = criterion(output, y)
