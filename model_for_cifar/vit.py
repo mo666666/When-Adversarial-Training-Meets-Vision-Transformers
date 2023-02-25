@@ -540,7 +540,6 @@ def vit_small_patch16_224(pretrained=False, patch_size=16, args=None, **kwargs):
         patch_size=patch_size, embed_dim=768, depth=8, num_heads=8, mlp_ratio=3.,
         qkv_bias=False, norm_layer=nn.LayerNorm, **kwargs)
     if pretrained:
-        # NOTE my scale was wrong for original weights, leaving this here until I have better ones for this model
         model_kwargs.setdefault('qk_scale', 768 ** -0.5)
     model = _create_vision_transformer('vit_small_patch16_224', pretrained=pretrained,args=args, **model_kwargs)
     return model
