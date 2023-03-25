@@ -3,7 +3,7 @@
 Adv Training of ViTs @ NeurIPS 2022 "[When Adversarial Training Meets Vision Transformers: Recipes from Training to Architecture](https://arxiv.org/pdf/2210.07540.pdf)" by Yichuan Mo, Dongxian Wu, Yifei Wang, Yiwen Guo, [Yisen Wang](https://yisenwang.github.io/).  
 
 ## Requirements
-Run `pip install requirement.txt` to install all requrements!
+Run `pip install -r requirement.txt` to install all requrements!
 ## CIFAR-10
 ### Vanilla adversarial defense methods：
 ```python
