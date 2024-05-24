@@ -2,7 +2,7 @@ import argparse
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='deit_small_patch16_224')
-    parser.add_argument('--method', type=str, default='pgd',
+    parser.add_argument('--method', type=str, default='AT',
                         choices=['AT'])
     parser.add_argument('--dataset', type=str,default="imagenet")
     parser.add_argument('--run-dummy', action='store_true')
