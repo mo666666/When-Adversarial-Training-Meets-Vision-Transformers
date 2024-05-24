@@ -379,7 +379,7 @@ def train_adv(args, model, ds_train, ds_test, logger):
                 y_ = y[t * batch_size:(t + 1) * batch_size].cuda()  # .max(dim=-1).indices
                 if len(X_) == 0:
                     break
-                loss, acc,y = train_step(X,y,epoch_now,mixup_fn)
+                loss, acc,y = train_step(X_,y_,epoch_now,mixup_fn)
                 train_loss += loss.item() * y_.size(0)
                 train_acc += acc.item() * y_.size(0)
                 train_n += y_.size(0)
