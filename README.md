@@ -54,7 +54,7 @@ python train_imagenet.py --model "swin_base_patch4_window7_224_in22k" --n_w 2 --
 ```
 ### Checkpoint
 
-Using our open-source code, we re-ran the experiment on ImageNet-1k on A100 GPUs. You can download the checkpoint from the following link: ViT-B ([checkpoint](https://drive.google.com/file/d/1KQReCIHzn0SzJt314-TUX3CkJDh67zi0/view?usp=drive_link), [AA](https://drive.google.com/file/d/1_UclZVWbmoaLfUncdibS7kaHiJ3VGc6J/view?usp=drive_link)), Swin-B ([checkpoint](https://drive.google.com/file/d/1P7MR4dHyOZ7L1OQlO83qa1hSSkST-A-0/view?usp=sharing), [AA](https://drive.google.com/file/d/1cdOQL_eUGf-o5l83p7ht6y6_MqWrJdOZ/view?usp=drive_link)).
+Using our open-source code, we re-ran the experiment on ImageNet-1k on A100 GPUs. You can download the checkpoint directly from the following link: ViT-B ([checkpoint](https://drive.google.com/file/d/1KQReCIHzn0SzJt314-TUX3CkJDh67zi0/view?usp=drive_link), [AA](https://drive.google.com/file/d/1_UclZVWbmoaLfUncdibS7kaHiJ3VGc6J/view?usp=drive_link)), Swin-B ([checkpoint](https://drive.google.com/file/d/1P7MR4dHyOZ7L1OQlO83qa1hSSkST-A-0/view?usp=sharing), [AA](https://drive.google.com/file/d/1cdOQL_eUGf-o5l83p7ht6y6_MqWrJdOZ/view?usp=drive_link)).
 
 
 
